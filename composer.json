@@ -70,7 +70,7 @@
         "symfony/validator": "^2.8",
         "symfony/var-dumper": "^2.8",
         "symfony/web-profiler-bundle": "^2.8",
-        "symfony/yaml": "dev-v2.8.52-php8 as 2.8.52",
+        "symfony/yaml": "dev-v2.8.52-php8",
         "tdammers/htmlmaid": "^0.7",
         "twig/twig": "^1.42",
         "ua-parser/uap-php": "^3.9",
