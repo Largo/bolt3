@@ -10,15 +10,15 @@
     ],
     "license": "MIT",
     "require": {
-        "bolt/collection": "^1.1",
-        "bolt/common": "^1.0",
-        "bolt/filesystem": "^2.5",
-        "bolt/passwordlib": "^1.0",
-        "bolt/pathogen": "^0.6",
-        "bolt/requirements": "^1.0.2",
-        "bolt/session": "^1.1",
-        "bolt/themes": "^2.0",
-        "bolt/thumbs": "^3.4",
+        "bolt/collection": "1.x-dev",
+        "bolt/common": "1.x-dev",
+        "bolt/filesystem": "2.x-dev",
+        "passwordlib/passwordlib": "^1.0",
+        "mschop/pathogen": "^0.7.1",
+        "bolt/requirements": "1.x-dev",
+        "bolt/session": "1.x-dev",
+        "bolt/themes": "2.x-dev",
+        "bolt/thumbs": "3.4-dev",
         "brandonwamboldt/utilphp": "^1.1",
         "cocur/slugify": "^3.2",
         "composer/composer": "^2",
@@ -78,7 +78,7 @@
     },
     "require-dev": {
         "bolt/codingstyle": "^2.0@dev",
-        "codeception/codeception": "^2.5",
+        "codeception/codeception": "^4.1",
         "league/flysystem-memory": "^1.0",
         "lstrojny/phpunit-function-mocker": "^0.4",
         "phpunit/dbunit": "^1.3",
@@ -123,6 +123,34 @@
         {
             "type": "git",
             "url": "https://github.com/Largo/symfony-yaml.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/bolt-collection.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/bolt-common.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/bolt-filesystem.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/bolt-requirements.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/bolt-session.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/bolt-themes.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/bolt-thumbs.git"
         }
     ]
 }
