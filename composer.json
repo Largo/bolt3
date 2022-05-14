@@ -171,6 +171,14 @@
         {
             "type": "git",
             "url": "https://github.com/Largo/pimple.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/symfony-http-foundation.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/Silex.git"
         }
     ]
 }
