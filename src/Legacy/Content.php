@@ -352,7 +352,7 @@ class Content implements \ArrayAccess
      *
      * @return boolean
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->values[$offset]);
     }
@@ -364,7 +364,7 @@ class Content implements \ArrayAccess
      *
      * @return mixed
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->getDecodedValue($offset);
     }
@@ -377,7 +377,7 @@ class Content implements \ArrayAccess
      * @param string $offset
      * @param mixed  $value
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         $this->values[$offset] = $value;
     }
@@ -387,7 +387,7 @@ class Content implements \ArrayAccess
      *
      * @param string $offset
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         if (isset($this->values[$offset])) {
             unset($this->values[$offset]);
