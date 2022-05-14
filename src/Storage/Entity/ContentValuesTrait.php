@@ -242,13 +242,15 @@ trait ContentValuesTrait
         }
 
         if (in_array($key, ['datecreated', 'datechanged', 'datepublish', 'datedepublish'])) {
-            if (!preg_match("/(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/", $value)) {
-                // @todo Try better date-parsing, instead of just setting it to
-                // 'now' (or 'the past' for datedepublish)
-                if ($key === 'datedepublish') {
-                    $value = null;
-                } else {
-                    $value = date('Y-m-d H:i:s');
+            if($value) {
+                if (!preg_match("/(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/", $value)) {
+                    // @todo Try better date-parsing, instead of just setting it to
+                    // 'now' (or 'the past' for datedepublish)
+                    if ($key === 'datedepublish') {
+                        $value = null;
+                    } else {
+                        $value = date('Y-m-d H:i:s');
+                    }
                 }
             }
         }
