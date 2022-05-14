@@ -30,9 +30,10 @@ class NewStableVersionNotifier
      */
     public static function fromEvent(Event $event)
     {
-        $io = NutStyle::fromComposer($event->getIO());
+        // Removed because of error: Class Symfony\Component\Console\Style\SymfonyStyle contains 4 abstract methods and must therefore be declared abstract or implement the remaining methods
+        //$io = NutStyle::fromComposer($event->getIO());
 
-        return new static($io);
+        //return new static($io);
     }
 
 
