@@ -79,6 +79,7 @@
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
+        "bolt/codingstyle": "dev-master@dev",
         "codeception/codeception": "^4.1",
         "league/flysystem-memory": "^1.0",
         "lstrojny/phpunit-function-mocker": "^0.4",
@@ -153,6 +154,10 @@
         {
             "type": "git",
             "url": "https://github.com/Largo/bolt-thumbs.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/bolt-codingstyle.git"
         }
     ]
 }
