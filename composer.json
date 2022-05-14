@@ -15,7 +15,8 @@
         "bolt/filesystem": "2.5.x-dev",
         "passwordlib/passwordlib": "^1.0@alpha",
         "mschop/pathogen": "^0.7.1",
-        "bolt/requirements": "dev-master",
+        "bolt/package-wrapper": "dev-master as 5.0",
+        "bolt/requirements": "dev-master as 1.0.2",
         "bolt/session": "1.1.x-dev",
         "bolt/themes": "2.x-dev",
         "bolt/thumbs": "3.x-dev",
@@ -136,6 +137,10 @@
         {
             "type": "git",
             "url": "https://github.com/Largo/bolt-requirements.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/bolt-package-wrapper.git"
         },
         {
             "type": "git",
