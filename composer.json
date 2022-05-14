@@ -51,7 +51,7 @@
         "symfony/config": "^2.8",
         "symfony/console": "^2.8",
         "symfony/debug": "^2.8",
-        "symfony/event-dispatcher": "^2.8",
+        "symfony/event-dispatcher": "2.8.x-dev as 2.8.52",
         "symfony/filesystem": "^2.8",
         "symfony/finder": "^2.8",
         "symfony/form": "^2.8",
@@ -158,6 +158,10 @@
         {
             "type": "git",
             "url": "https://github.com/Largo/bolt-codingstyle.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/bolt-event-dispatcher.git"
         }
     ]
 }
