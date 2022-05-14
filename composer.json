@@ -48,7 +48,7 @@
         "stecman/symfony-console-completion": "^0.11",
         "swiftmailer/swiftmailer": "^5.4.5",
         "symfony/asset": "^2.8",
-        "symfony/config": "^2.8",
+        "symfony/config": "2.8.x-dev as 2.8.52",
         "symfony/console": "^2.8",
         "symfony/debug": "^2.8",
         "symfony/event-dispatcher": "2.8.x-dev as 2.8.52",
@@ -162,6 +162,10 @@
         {
             "type": "git",
             "url": "https://github.com/Largo/bolt-event-dispatcher.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/symfony-config.git"
         }
     ]
 }
