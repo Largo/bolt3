@@ -189,8 +189,8 @@ class DebugServiceProvider implements ServiceProviderInterface
     {
         if ($this->firstPhase) {
             if ($app['error_handler.enabled']) {
-                // Report all errors since it has its own logging / throwing errors logic.
-                error_reporting(E_ALL);
+                // Report all errors EXCEPT DEPRECATED BECAUSE OF PHP8 since it has its own logging / throwing errors logic.
+                error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 
                 // Disable built-in PHP error displaying logic. Errors are:
                 // 1. Logged to the logger.
