@@ -13,7 +13,7 @@
         "bolt/collection": "1.1.x-dev",
         "bolt/common": "1.1.x-dev",
         "bolt/filesystem": "2.5.x-dev",
-        "passwordlib/passwordlib": "^1.0@alpha",
+        "bolt/passwordlib": "^1.0",
         "mschop/pathogen": "^0.7.1",
         "bolt/package-wrapper": "dev-master as 5.0",
         "bolt/requirements": "dev-master as 1.0.2",
