@@ -208,14 +208,14 @@ class QueueTest extends TestCase
         return new Queue($this->injector, $this->packages, $this->config);
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->injector = $this->getMockBuilder(Injector::class)->getMock();
         $this->packages = $this->getMockBuilder(Packages::class)->getMock();
         $this->config = $this->getMockBuilder(Config::class)->disableOriginalConstructor()->getMock();
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $this->injector = null;
         $this->packages = null;

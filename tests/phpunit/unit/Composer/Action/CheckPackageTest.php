@@ -11,7 +11,7 @@ namespace Bolt\Tests\Composer\Action;
  */
 class CheckPackageTest extends ActionUnitTest
 {
-    public function tearDown()
+    public function tearDown(): void
     {
         $app = $this->getApp();
         $action = $app['extend.action']['remove'];

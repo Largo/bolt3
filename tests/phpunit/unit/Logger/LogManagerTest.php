@@ -18,7 +18,7 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class LogManagerTest extends BoltUnitTest
 {
-    public function setUp()
+    public function setUp(): void
     {
     }
 

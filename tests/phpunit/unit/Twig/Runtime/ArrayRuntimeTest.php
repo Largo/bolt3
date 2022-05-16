@@ -13,7 +13,7 @@ use Bolt\Twig\Extension\ArrayExtension;
  */
 class ArrayRuntimeTest extends BoltUnitTest
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->php = \PHPUnit_Extension_FunctionMocker::start($this, 'Bolt\Twig\Extension')
             ->mockFunction('shuffle')

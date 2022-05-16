@@ -444,20 +444,20 @@ abstract class BoltUnitTest extends TestCase
         ;
     }
 
-    /**
-     * @deprecated remove in v4 as PHPUnit 5 includes this
-     *
-     * @param mixed $originalClassName
-     *
-     * @return MockObject
-     */
-    protected function createMock($originalClassName)
-    {
-        return $this->getMockBuilder($originalClassName)
-            ->disableOriginalConstructor()
-            ->disableOriginalClone()
-            ->disableArgumentCloning()
-            ->getMock()
-        ;
-    }
+    // /**
+    //  * @deprecated remove in v4 as PHPUnit 5 includes this
+    //  *
+    //  * @param mixed $originalClassName
+    //  *
+    //  * @return MockObject
+    //  */
+    // protected function createMock(string $originalClassName)
+    // {
+    //     return $this->getMockBuilder($originalClassName)
+    //         ->disableOriginalConstructor()
+    //         ->disableOriginalClone()
+    //         ->disableArgumentCloning()
+    //         ->getMock()
+    //     ;
+    // }
 }

@@ -26,7 +26,7 @@ class BuilderTest extends TestCase
     /** @var callable */
     protected $generatorFactory;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->em = $this->prophesize(EntityManager::class);
         $this->generator = $this->prophesize(Prefill\RecordContentGenerator::class);

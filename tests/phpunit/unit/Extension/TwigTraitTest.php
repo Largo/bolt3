@@ -20,7 +20,7 @@ class TwigTraitTest extends BoltUnitTest
     /** @var DirectoryInterface */
     private $baseDir;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $fs = new Filesystem(new Memory());
         $this->baseDir = $fs->getDir('vendor/unit/test');

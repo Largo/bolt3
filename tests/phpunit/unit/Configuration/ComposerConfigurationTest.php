@@ -23,7 +23,7 @@ class ComposerConfigurationTest extends TestCase
     /** @var MockObject */
     protected $php;
 
-    public function setup()
+    public function setUp(): void
     {
         $this->php = FunctionMocker::start($this, 'Bolt\Configuration')
             ->mockFunction('is_writable')
@@ -31,7 +31,7 @@ class ComposerConfigurationTest extends TestCase
             ->getMock();
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         \PHPUnit_Extension_FunctionMocker::tearDown();
     }

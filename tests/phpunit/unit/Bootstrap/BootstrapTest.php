@@ -21,7 +21,7 @@ class BootstrapTest extends TestCase
 {
     protected $rootPath = PHPUNIT_WEBROOT;
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $fs = new Filesystem();
         $fs->remove($this->rootPath . '/.bolt.yml');

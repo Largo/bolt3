@@ -30,7 +30,7 @@ class StackTest extends BoltUnitTest
     /** @var string[] */
     private $acceptedFileTypes = ['twig', 'html', 'js', 'css', 'scss', 'gif', 'jpg', 'jpeg', 'png', 'ico', 'zip', 'tgz', 'txt', 'md', 'doc', 'docx', 'pdf', 'epub', 'xls', 'xlsx', 'ppt', 'pptx', 'mp3', 'ogg', 'wav', 'm4a', 'mp4', 'm4v', 'ogv', 'wmv', 'avi', 'webm', 'svg'];
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $app = $this->getApp();
         $this->users = $this->getMockUsers(['getCurrentUser', 'saveUser']);

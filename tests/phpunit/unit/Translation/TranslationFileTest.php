@@ -15,7 +15,7 @@ use Symfony\Component\Yaml\Yaml;
  */
 class TranslationFileTest extends BoltUnitTest
 {
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         $fs = new Filesystem();
         $fs->mirror(

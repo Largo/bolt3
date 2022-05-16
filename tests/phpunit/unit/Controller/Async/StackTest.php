@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\Request;
  **/
 class StackTest extends ControllerUnitTest
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 

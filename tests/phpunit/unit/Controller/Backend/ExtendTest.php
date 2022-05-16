@@ -18,7 +18,7 @@ use Symfony\Component\HttpFoundation\Response;
  **/
 class ExtendTest extends ControllerUnitTest
 {
-    protected function setUp()
+    protected function setUp(): void
     {
     }
 

@@ -20,7 +20,7 @@ class ResolvedExtensionTest extends BoltUnitTest
     /** @var ResolvedExtension */
     protected $resolvedExtension;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->extension = new Mock\NormalExtension();

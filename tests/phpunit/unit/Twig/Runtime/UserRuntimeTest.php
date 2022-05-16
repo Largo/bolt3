@@ -16,7 +16,7 @@ use Symfony\Component\Security\Csrf\TokenStorage\SessionTokenStorage;
  */
 class UserRuntimeTest extends BoltUnitTest
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $app = $this->getApp();
         $this->addDefaultUser($app);

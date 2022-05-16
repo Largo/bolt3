@@ -15,7 +15,7 @@ use Symfony\Component\Filesystem\Filesystem;
  */
 abstract class AbstractExtensionsUnitTest extends BoltUnitTest
 {
-    public function setup()
+    public function setUp(): void
     {
         $this->php = FunctionMocker::start($this, 'Bolt')
             ->mockFunction('file_exists')
@@ -30,7 +30,7 @@ abstract class AbstractExtensionsUnitTest extends BoltUnitTest
             ->getMock();
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         FunctionMocker::tearDown();
 

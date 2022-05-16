@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class AccessCheckerTest extends BoltUnitTest
 {
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->resetDb();
     }

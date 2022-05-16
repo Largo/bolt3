@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\Request;
  **/
 class RecordsTest extends ControllerUnitTest
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->resetConfig();
     }

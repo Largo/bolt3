@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
  **/
 class LogTest extends ControllerUnitTest
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->resetConfig();
         $this->resetDb();

@@ -22,7 +22,7 @@ class ConfigTraitTest extends BoltUnitTest
     /** @var DirectoryInterface */
     private $extConfigDir;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->extDir = (new Filesystem(new Memory()))->getDir('/');
         $this->extConfigDir = (new Filesystem(new Memory()))->getDir('/');

@@ -36,7 +36,7 @@ class StorageEventListenerTest extends TestCase
     /** @var StorageEvent */
     private $storageEvent;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->user = $this->prophesize(Users::class);
 

@@ -16,13 +16,13 @@ use Symfony\Component\HttpFoundation\Response;
  **/
 class UploadTest extends ControllerUnitTest
 {
-    public function setup()
+    public function setUp(): void
     {
         @mkdir(PHPUNIT_ROOT . '/resources/files', 0777, true);
         chmod(PHPUNIT_ROOT . '/resources/files', 0777);
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         @unlink(TEST_ROOT . '/app/cache/config-cache.json');
         $this->getService('filesystem')->getDir('files://')->setVisibility('public');

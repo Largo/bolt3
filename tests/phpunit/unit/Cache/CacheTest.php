@@ -17,7 +17,7 @@ class CacheTest extends BoltUnitTest
      */
     protected $workspace;
 
-    public function setUp()
+    public function setUp(): void
     {
         $app = $this->getApp();
         $path = new PlatformFileSystemPathFactory();
@@ -32,7 +32,7 @@ class CacheTest extends BoltUnitTest
         );
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->cache->flushAll();
         $this->clean($this->workspace);

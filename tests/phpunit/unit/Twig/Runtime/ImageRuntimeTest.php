@@ -15,7 +15,7 @@ use Symfony\Component\Filesystem\Filesystem;
  */
 class ImageRuntimeTest extends BoltUnitTest
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $app = $this->getApp();
         $files = $app['path_resolver']->resolve('files');

@@ -3,7 +3,7 @@
 namespace Bolt\Tests;
 
 use Bolt\Application;
-use PHPUnit\Framework\BaseTestListener;
+use PHPUnit\Framework\TestListenerDefaultImplementation as PHPUnit_TestListener;
 use PHPUnit\Framework\TestCase;
 use PHPUnit_Framework_Test as Test;
 use PHPUnit_Framework_TestSuite as TestSuite;
@@ -15,7 +15,7 @@ use Symfony\Component\Filesystem\Filesystem;
  *
  * @author Gawain Lynch <gawain.lynch@gmail.com>
  */
-class BoltListener extends BaseTestListener
+class BoltListener extends PHPUnit_TestListener
 {
     /** @var array */
     protected $configs = [

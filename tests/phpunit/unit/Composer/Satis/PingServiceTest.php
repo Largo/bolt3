@@ -69,16 +69,16 @@ class PingServiceTest extends TestCase
         $this->assertRegExp($regex, $messages[0]);
     }
 
-    /**
-     * @deprecated remove in v4 as PHPUnit 5 includes this
-     */
-    protected function createMock($originalClassName)
-    {
-        return $this->getMockBuilder($originalClassName)
-            ->disableOriginalConstructor()
-            ->disableOriginalClone()
-            ->disableArgumentCloning()
-            ->getMock()
-        ;
-    }
+    // /**
+    //  * @deprecated remove in v4 as PHPUnit 5 includes this
+    //  */
+    // protected function createMock($originalClassName)
+    // {
+    //     return $this->getMockBuilder($originalClassName)
+    //         ->disableOriginalConstructor()
+    //         ->disableOriginalClone()
+    //         ->disableArgumentCloning()
+    //         ->getMock()
+    //     ;
+    // }
 }

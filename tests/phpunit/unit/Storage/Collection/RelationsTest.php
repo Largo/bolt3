@@ -8,7 +8,7 @@ use Bolt\Tests\BoltUnitTest;
 
 class RelationsTest extends BoltUnitTest
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->addSomeContent(['pages', 'entries', 'showcases']);
     }

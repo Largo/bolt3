@@ -34,7 +34,7 @@ abstract class AbstractValidationTest extends TestCase
     /** @var MockObject */
     protected $_validation;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->_filesystem = FunctionMocker::start($this, 'Symfony\Component\Filesystem')
             ->mockFunction('file_exists')
@@ -72,7 +72,7 @@ abstract class AbstractValidationTest extends TestCase
         );
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         FunctionMocker::tearDown();
     }

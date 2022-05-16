@@ -10,7 +10,7 @@ abstract class ControllerUnitTest extends BoltUnitTest
 {
     private $app;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->resetDb();
         $this->addDefaultUser($this->getApp());
@@ -67,7 +67,7 @@ abstract class ControllerUnitTest extends BoltUnitTest
         return $this->getService('logger.flash');
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         parent::tearDown();
         $this->app = null;

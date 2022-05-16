@@ -44,7 +44,7 @@ class ConfigGetTest extends BoltUnitTest
         $this->assertRegExp('/sitename: A sample site/', $tester->getDisplay());
     }
 
-    public function setUp()
+    public function setUp(): void
     {
         @mkdir(PHPUNIT_ROOT . '/resources/', 0777, true);
         @mkdir(TEST_ROOT . '/app/cache/', 0777, true);
@@ -52,7 +52,7 @@ class ConfigGetTest extends BoltUnitTest
         @copy($distname, PHPUNIT_ROOT . '/resources/config.yml');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         @unlink(PHPUNIT_ROOT . '/resources/config.yml');
         @unlink(TEST_ROOT . '/app/cache/');

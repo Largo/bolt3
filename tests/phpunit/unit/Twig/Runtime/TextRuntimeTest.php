@@ -17,7 +17,7 @@ class TextRuntimeTest extends BoltUnitTest
     /** @var MockObject */
     public $phpMock;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->phpMock = \PHPUnit_Extension_FunctionMocker::start($this, 'Bolt\Twig\Runtime')
             ->mockFunction('setlocale')

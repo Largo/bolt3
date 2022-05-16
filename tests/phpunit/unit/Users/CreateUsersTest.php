@@ -11,7 +11,7 @@ use Bolt\Tests\BoltUnitTest;
  **/
 class CreateUsersTest extends BoltUnitTest
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->resetDb();
     }

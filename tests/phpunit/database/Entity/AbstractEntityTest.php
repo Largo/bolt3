@@ -65,7 +65,7 @@ abstract class AbstractEntityTest extends BoltUnitTest
     /**
      * {@inheritdoc}
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         if (self::$connection) {
@@ -77,7 +77,7 @@ abstract class AbstractEntityTest extends BoltUnitTest
     /**
      * {@inheritdoc}
      */
-    public static function tearDownAfterClass()
+    public static function tearDownAfterClass(): void
     {
         if (self::$connection) {
             $schemaManager = self::$connection->getSchemaManager();

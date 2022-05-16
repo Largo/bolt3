@@ -27,7 +27,7 @@ class PimpleDumpTest extends BoltUnitTest
         $this->assertFileExists(PHPUNIT_WEBROOT . '/pimple.json');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         @unlink(PHPUNIT_WEBROOT . '/pimple.json');
     }

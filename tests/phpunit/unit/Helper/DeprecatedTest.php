@@ -22,7 +22,7 @@ class DeprecatedTest extends TestCase
         $this->assertDeprecation('Accessing $app[\'foo\'] is deprecated since %d.%d and will be removed in %d.0. Do it this way instead.');
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->deprecations = [];
         set_error_handler(
@@ -33,7 +33,7 @@ class DeprecatedTest extends TestCase
         );
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         restore_error_handler();
     }

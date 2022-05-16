@@ -6,7 +6,7 @@ use Bolt\Tests\BoltUnitTest;
 
 abstract class ActionUnitTest extends BoltUnitTest
 {
-    public function setUp()
+    public function setUp(): void
     {
         $app = $this->getApp();
         $action = $app['extend.manager.json'];

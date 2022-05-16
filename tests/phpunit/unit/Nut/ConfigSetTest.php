@@ -46,7 +46,7 @@ class ConfigSetTest extends BoltUnitTest
         $this->assertRegExp("/The key 'nonexistent' was not found in config:\/\/config.yml/", $tester->getDisplay());
     }
 
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         @mkdir(PHPUNIT_ROOT . '/resources/', 0777, true);
         @mkdir(TEST_ROOT . '/app/cache/', 0777, true);
@@ -54,7 +54,7 @@ class ConfigSetTest extends BoltUnitTest
         @copy($distname, PHPUNIT_ROOT . '/resources/config.yml');
     }
 
-    public static function tearDownAfterClass()
+    public static function tearDownAfterClass(): void
     {
         @unlink(PHPUNIT_ROOT . '/resources/config.yml');
         @unlink(TEST_ROOT . '/app/cache/');

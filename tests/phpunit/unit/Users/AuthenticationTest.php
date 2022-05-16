@@ -18,7 +18,7 @@ class AuthenticationTest extends BoltUnitTest
      */
     private $user;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->resetDb();
 

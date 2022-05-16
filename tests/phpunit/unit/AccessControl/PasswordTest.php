@@ -18,7 +18,7 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class PasswordTest extends BoltUnitTest
 {
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->resetDb();
     }

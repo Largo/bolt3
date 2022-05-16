@@ -37,7 +37,7 @@ class FilesystemManagerTest extends ControllerUnitTest
     /** @var CsrfToken */
     private $token;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $tokenManager = new CsrfTokenManager(null, new SessionTokenStorage(new Session(new MockArraySessionStorage())));
         $this->setService('csrf', $tokenManager);
