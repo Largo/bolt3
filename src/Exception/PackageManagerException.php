@@ -4,8 +4,8 @@ namespace Bolt\Exception;
 
 class PackageManagerException extends \Exception
 {
-    protected $file;
-    protected $line;
+    protected string $file;
+    protected int $line;
 
     public function __construct($message = null, $code = 0, \Exception $previous = null)
     {
