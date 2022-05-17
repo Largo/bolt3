@@ -55,7 +55,7 @@
         "symfony/filesystem": "^2.8",
         "symfony/finder": "^2.8",
         "symfony/form": "^2.8",
-        "symfony/http-foundation": "^2.8",
+        "symfony/http-foundation": "v2.8.53",
         "symfony/http-kernel": "^2.8",
         "symfony/intl": "^2.8",
         "symfony/monolog-bridge": "^2.8",
